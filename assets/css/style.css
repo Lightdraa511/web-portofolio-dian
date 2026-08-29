@@ -1673,6 +1673,11 @@ img {
   color: #000;
 }
 
+.badge-blue {
+  background: #0077b5;
+  color: #fff;
+}
+
 .channel-neo-badge i {
   width: 22px;
   height: 22px;
