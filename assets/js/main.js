@@ -179,15 +179,6 @@ function renderProjectCards() {
 
       <!-- Single Primary Mockup Preview (Clickable) -->
       <div class="project-primary-preview" onclick="openProjectModal('${p.id}')" title="Klik untuk membuka detail & galeri preview">
-        <div class="mock-window-bar">
-          <div class="mock-dots">
-            <span class="mock-dot red"></span>
-            <span class="mock-dot yellow"></span>
-            <span class="mock-dot green"></span>
-          </div>
-          <span class="mock-window-title">SYSTEM MODULE PREVIEW</span>
-          <span class="mock-preview-tag">${mainScreen.badge}</span>
-        </div>
 
         ${mainScreen.image ? `
           <div class="mock-screen-image-container">
@@ -356,8 +347,14 @@ function initGSAP() {
       const deltaY = (targetRect.top + scrollY) - (heroRect.top + scrollY);
       const targetScale = isDesktop ? 1 : (targetSlot.offsetWidth / (heroRect.width || 290));
 
+      // Kill all existing ScrollTriggers and tweens on the photo
+      ScrollTrigger.getAll().forEach(st => {
+        if (st.animation && st.animation.targets && st.animation.targets().includes(photo)) {
+          st.kill();
+        }
+      });
       gsap.killTweensOf(photo);
-      gsap.set(photo, { clearProps: 'transform,opacity' });
+      gsap.set(photo, { clearProps: 'all' });
 
       gsap.to(photo, {
         scrollTrigger: {
@@ -365,14 +362,18 @@ function initGSAP() {
           start: 'top top',
           endTrigger: '#about',
           end: isDesktop ? 'top 20%' : 'top 15%',
-          scrub: 1,
-          invalidateOnRefresh: true
+          scrub: 0.3,
+          invalidateOnRefresh: true,
+          fastScrollEnd: true,
+          onRefreshInit: () => {
+            gsap.set(photo, { clearProps: 'transform,opacity' });
+          }
         },
         x: deltaX,
         y: deltaY,
         scale: targetScale,
         transformOrigin: 'top left',
-        ease: 'power1.inOut'
+        ease: 'none'
       });
     }
 
@@ -447,7 +448,6 @@ function openProjectModal(projectId) {
           </div>
           <div class="gallery-label">
             <span>${s.title}</span>
-            ${s.image ? '<span style="font-size:10px; color:var(--neo-yellow);"><i data-lucide="eye"></i> PREVIEW</span>' : ''}
           </div>
         </div>
       `)
