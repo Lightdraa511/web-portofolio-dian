@@ -1839,14 +1839,16 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .about-grid-layout {
+    gap: 1.75rem;
+  }
+
   .desktop-only-slot {
     display: none !important;
   }
 
   .mobile-only-slot {
     display: block !important;
-    width: 120px;
-    height: 175px;
     flex-shrink: 0;
   }
 
@@ -1854,40 +1856,23 @@ img {
     display: flex;
     align-items: center;
     gap: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 
   .hero-stage-grid {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
+    gap: 2rem;
   }
 
   .hero-text-col {
     align-items: center;
+    text-align: center;
   }
 
   .hero-btn-group {
     justify-content: center;
-  }
-}
-
-@media (max-width: 640px) {
-  .mobile-only-slot {
-    width: 105px;
-    height: 155px;
-    flex-shrink: 0;
-  }
-
-  .about-focus-header {
-    display: flex;
-    align-items: center;
-    gap: 0.85rem;
-  }
-
-  .speech-quote {
-    font-size: 0.92rem;
-    line-height: 1.5;
   }
 }
 
@@ -1922,21 +1907,173 @@ img {
     gap: 1.25rem;
   }
 
+  /* Hero Section Mobile */
+  .neo-hero-section {
+    min-height: auto;
+    padding: 2.25rem 0 3rem;
+  }
+
+  .hero-stage-grid {
+    gap: 1.5rem;
+  }
+
+  .hero-marquee-layers {
+    opacity: 0.2;
+  }
+
   .marquee-strip {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   .neo-photo-frame {
-    width: 220px;
+    width: 170px;
+    border-width: 3px;
+    box-shadow: 7px 7px 0px var(--neo-red), 7px 7px 0px 2px #000;
   }
 
   .hero-portrait-img {
-    height: 270px;
+    height: 200px;
+  }
+
+  .photo-bottom-caption {
+    padding: 0.45rem 0.75rem;
+  }
+
+  .photo-bottom-caption strong {
+    font-size: 0.85rem;
+  }
+
+  .photo-bottom-caption span {
+    font-size: 0.7rem;
+  }
+
+  .hero-giant-name {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+    line-height: 1.05;
+  }
+
+  .hero-desc-box {
+    font-size: 0.88rem;
+    padding: 0.65rem 1rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  .hero-btn-group {
+    gap: 0.75rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .neo-btn {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.82rem;
+  }
+
+  /* Chapter Section Spacing Mobile */
+  .neo-chapter-section {
+    padding: 3.5rem 0;
+  }
+
+  .chapter-header-box {
+    margin-bottom: 2rem;
+  }
+
+  .chapter-main-title {
+    font-size: 1.9rem;
+  }
+
+  .chapter-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .neo-card-panel {
+    padding: 1.4rem;
+  }
+
+  /* About Section Mobile */
+  .about-main-panel {
+    padding: 1.4rem;
+  }
+
+  .about-avatar-frame {
+    width: 90px;
+    height: 90px;
+  }
+
+  .neo-speech-box {
+    padding: 1rem;
+  }
+
+  .speech-quote {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .panel-title-text {
+    font-size: 1.2rem;
+  }
+
+  .panel-body-text {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  /* Projects Mobile */
+  .project-neo-card {
+    padding: 1.4rem;
+    gap: 1rem;
   }
 
   .project-card-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .project-num-badge {
+    font-size: 1.6rem;
+    padding: 0.15rem 0.6rem;
+  }
+
+  .project-name-h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-desc-snippet {
+    font-size: 0.88rem;
+  }
+
+  .mock-screen-image-container {
+    height: 175px;
+  }
+
+  .mock-image-overlay {
+    padding: 0.85rem;
+  }
+
+  .mock-module-headline {
+    font-size: 0.95rem;
+  }
+
+  .mock-click-hint {
+    font-size: 0.75rem;
+  }
+
+  /* Timeline Mobile */
+  .timeline-box-body {
+    padding: 1.35rem;
+  }
+
+  .timeline-role-title {
+    font-size: 1.15rem;
+  }
+
+  .timeline-company-name {
+    font-size: 0.9rem;
+  }
+
+  .timeline-body-text {
+    font-size: 0.88rem;
   }
 
   /* Chapter 05 Contact Responsive */
@@ -1952,7 +2089,7 @@ img {
   }
 
   .form-neo-box {
-    padding: 1.5rem;
+    padding: 1.4rem;
   }
 
   .form-neo-title {
@@ -1961,54 +2098,165 @@ img {
 }
 
 @media (max-width: 480px) {
-  /* Contact section small screen fixes */
-  .channel-neo-main {
-    font-size: 0.85rem;
+  .container {
+    padding: 0 1rem;
   }
 
-  .channel-neo-sub {
+  /* Hero Section Small Mobile */
+  .neo-hero-section {
+    padding: 1.75rem 0 2.5rem;
+  }
+
+  .neo-photo-frame {
+    width: 140px;
+  }
+
+  .hero-portrait-img {
+    height: 165px;
+  }
+
+  .photo-bottom-caption strong {
+    font-size: 0.78rem;
+  }
+
+  .photo-bottom-caption span {
     font-size: 0.65rem;
   }
 
-  .channel-neo-cta {
-    font-size: 0.72rem;
+  .hero-giant-name {
+    font-size: 1.85rem;
+  }
+
+  .hero-desc-box {
+    font-size: 0.8rem;
+    padding: 0.55rem 0.8rem;
+  }
+
+  .hero-btn-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .hero-btn-group .neo-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Chapter Spacing Small Mobile */
+  .neo-chapter-section {
+    padding: 2.75rem 0;
+  }
+
+  .chapter-main-title {
+    font-size: 1.65rem;
+  }
+
+  .chapter-subtitle {
+    font-size: 0.82rem;
+  }
+
+  /* About Small Mobile */
+  .about-focus-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .about-avatar-frame {
+    width: 80px;
+    height: 80px;
+  }
+
+  .neo-speech-box {
+    padding: 0.85rem;
+  }
+
+  .speech-quote {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  /* Tech Stack Small Mobile */
+  .tech-item-card {
+    width: 160px;
+    height: 70px;
+    padding: 0.6rem 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .tech-logo-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tech-meta strong {
+    font-size: 0.8rem;
+  }
+
+  .tech-meta span {
+    font-size: 0.62rem;
+  }
+
+  /* Projects Small Mobile */
+  .project-neo-card {
+    padding: 1.1rem;
+  }
+
+  .project-name-h3 {
+    font-size: 1.05rem;
+  }
+
+  .mock-screen-image-container {
+    height: 140px;
+  }
+
+  .mock-module-headline {
+    font-size: 0.88rem;
+  }
+
+  /* Contact Section Small Mobile */
+  .channel-neo-item {
+    padding: 0.9rem;
+    gap: 0.75rem;
   }
 
   .channel-neo-badge {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 
-  .channel-neo-badge i {
-    width: 18px;
-    height: 18px;
-  }
-
+  .channel-neo-badge i,
   .channel-neo-badge svg {
     width: 18px;
     height: 18px;
   }
 
+  .channel-neo-main {
+    font-size: 0.82rem;
+  }
+
+  .channel-neo-sub {
+    font-size: 0.62rem;
+  }
+
+  .channel-neo-cta {
+    font-size: 0.7rem;
+  }
+
   .form-neo-box {
-    padding: 1.25rem;
+    padding: 1.15rem;
   }
 
   .neo-field-input,
   .neo-field-textarea {
-    font-size: 0.88rem;
-    padding: 0.7rem 0.85rem;
+    font-size: 0.85rem;
+    padding: 0.65rem 0.8rem;
   }
 
   .neo-btn.btn-block-width {
-    font-size: 0.8rem;
-    padding: 0.7rem 1rem;
-  }
-
-  .chapter-main-title {
-    font-size: 1.8rem;
-  }
-
-  .chapter-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.78rem;
+    padding: 0.7rem 0.9rem;
   }
 }

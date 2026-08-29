@@ -267,7 +267,7 @@ function initGSAP() {
   heroTL
     .from('#navbar', { y: -60, opacity: 0, duration: 0.6, ease: 'power2.out' })
     .from('#heroBadgeCluster', { x: -50, opacity: 0, duration: 0.7, ease: 'back.out(1.4)' }, '-=0.3')
-    .from('#heroPortrait', { scale: 0.85, opacity: 0, duration: 0.8, ease: 'back.out(1.5)' }, '-=0.5');
+    .from('#travelingPortrait', { scale: 0.85, opacity: 0, duration: 0.8, ease: 'back.out(1.5)' }, '-=0.5');
 
   // Scroll Reveals
   gsap.utils.toArray('.gsap-reveal').forEach((elem) => {
@@ -335,17 +335,6 @@ function initGSAP() {
   if (photo && heroSlot && (aboutDesktopSlot || aboutMobileSlot)) {
     function setupTravelingPhoto() {
       const isDesktop = window.innerWidth > 1024;
-      const targetSlot = isDesktop ? aboutDesktopSlot : aboutMobileSlot;
-
-      if (!targetSlot) return;
-
-      const heroRect = heroSlot.getBoundingClientRect();
-      const targetRect = targetSlot.getBoundingClientRect();
-      const scrollY = window.scrollY || window.pageYOffset;
-
-      const deltaX = targetRect.left - heroRect.left;
-      const deltaY = (targetRect.top + scrollY) - (heroRect.top + scrollY);
-      const targetScale = isDesktop ? 1 : (targetSlot.offsetWidth / (heroRect.width || 290));
 
       // Kill all existing ScrollTriggers and tweens on the photo
       ScrollTrigger.getAll().forEach(st => {
@@ -356,12 +345,24 @@ function initGSAP() {
       gsap.killTweensOf(photo);
       gsap.set(photo, { clearProps: 'all' });
 
+      // Only perform cross-section traveling animation on desktop screens
+      if (!isDesktop || !aboutDesktopSlot) {
+        return;
+      }
+
+      const heroRect = heroSlot.getBoundingClientRect();
+      const targetRect = aboutDesktopSlot.getBoundingClientRect();
+      const scrollY = window.scrollY || window.pageYOffset;
+
+      const deltaX = targetRect.left - heroRect.left;
+      const deltaY = (targetRect.top + scrollY) - (heroRect.top + scrollY);
+
       gsap.to(photo, {
         scrollTrigger: {
           trigger: '#hero',
           start: 'top top',
           endTrigger: '#about',
-          end: isDesktop ? 'top 20%' : 'top 15%',
+          end: 'top 20%',
           scrub: 0.3,
           invalidateOnRefresh: true,
           fastScrollEnd: true,
@@ -371,7 +372,7 @@ function initGSAP() {
         },
         x: deltaX,
         y: deltaY,
-        scale: targetScale,
+        scale: 1,
         transformOrigin: 'top left',
         ease: 'none'
       });
