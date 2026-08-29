@@ -88,23 +88,6 @@ const projectsData = {
       { title: 'Portal Login & Autentikasi Operator SITEPAD BKAD', badge: '04. LOGIN SITEPAD', image: 'assets/images/projects/lbs/login.jpg' },
       { title: 'Manajemen Profil Operator & Keamanan Akun', badge: '05. PROFIL OPERATOR', image: 'assets/images/projects/lbs/profil-operator.jpg' }
     ]
-  },
-  'vinix7-aurum': {
-    id: 'vinix7-aurum',
-    number: '04',
-    category: 'DATA PIPELINE',
-    title: 'Data Cleaning & Exploratory Analysis Pipeline',
-    tech: ['Data Cleaning', 'EDA Analysis', 'Data Visualization'],
-    description: 'Pipeline pemrosesan dan analisis data operasional perusahaan Vinix7 Aurum: data cleaning, penanganan missing values & outliers, analisis data eksploratif (EDA), dan pembuatan visualisasi interaktif.',
-    features: [
-      'Automated Data Cleaning & Formatting Pipeline',
-      'Exploratory Data Analysis (EDA) dan Analisis Statistik',
-      'Perancangan Visualisasi Grafik Interaktif dan Dashboard Laporan'
-    ],
-    screenshots: [
-      { title: 'Pipeline Pembersihan & Formatting Data Mentah', badge: 'DATA CLEANING' },
-      { title: 'Visualisasi Trend & Distribusi Metrik Analisis', badge: 'ANALYTICS CHART' }
-    ]
   }
 };
 
