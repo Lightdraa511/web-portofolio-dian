@@ -42,7 +42,7 @@ const projectsData = {
   'kknm-pendaftaran': {
     id: 'kknm-pendaftaran',
     number: '02',
-    category: 'KERJA PRAKTIK',
+    category: 'ACADEMIC WEB SYSTEM',
     title: 'Aplikasi Pendaftaran KKNM Berbasis Web',
     tech: ['Laravel', 'MySQL', 'Filament', 'Bootstrap 5', 'Laravel Breeze'],
     description: 'Platform pendaftaran KKNM online yang menggantikan alur manual via WhatsApp & Google Form. Dilengkapi validasi NIM real-time, manajemen kuota lokasi dinamis, alur upload dokumen persyaratan terstruktur, dan admin panel komprehensif untuk monitoring seluruh proses pendaftaran mahasiswa.',
@@ -68,10 +68,10 @@ const projectsData = {
   'bkad-tangsel': {
     id: 'bkad-tangsel',
     number: '03',
-    category: 'GOVERNMENT SYSTEM',
-    title: 'SITEPAD — Monitoring Aset Daerah Berbasis LBS (BKAD Tangsel)',
+    category: 'CAMPUS PROJECT',
+    title: 'SITEPAD — Monitoring Aset Daerah Berbasis LBS (Proyek Kampus)',
     tech: ['Laravel REST API', 'Flutter', 'Geolocator', 'LBS / GIS Mapping', 'Excel / CSV / PDF Export'],
-    description: 'Aplikasi mobile sistem monitoring aset daerah SITEPAD untuk Badan Keuangan dan Aset Daerah (BKAD) Kota Tangerang Selatan — terintegrasi dengan backend REST API Laravel, pemetaan geolokasi titik koordinat real-time (Location-Based Services), inventarisasi data fisik aset, serta modul ekspor laporan multi-format (Excel, CSV, dan PDF).',
+    description: 'Aplikasi mobile sistem monitoring aset daerah SITEPAD — dikembangkan sebagai proyek kampus berbasis studi kasus Badan Keuangan dan Aset Daerah (BKAD) Kota Tangerang Selatan. Terintegrasi dengan backend REST API Laravel, pemetaan geolokasi titik koordinat real-time (Location-Based Services), inventarisasi data fisik aset, serta modul ekspor laporan multi-format (Excel, CSV, dan PDF).',
     features: [
       'Autentikasi & Manajemen Sesi Operator SITEPAD BKAD Kota Tangerang Selatan',
       'Dashboard Utama: Monitoring Aktivitas Terbaru & Pemetaan Ringkas Titik Aset',
