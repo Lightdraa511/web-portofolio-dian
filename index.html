@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIAN ARDIANSAH — Fullstack Web Developer</title>
+  <meta name="description" content="Portfolio Dian Ardiansah - Fullstack Web Developer specializing in Laravel, React, PHP, MySQL, REST API & Database Engineering.">
+  
+  <!-- Fonts: Bebas Neue, Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Neobrutalism Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="neo-body">
+
+  <!-- Screentone Dot Matrix Background -->
+  <div class="neo-screentone-bg" aria-hidden="true"></div>
+
+  <!-- Top Neobrutalist Ticker Bar -->
+  <div class="neo-ticker-bar">
+    <div class="ticker-flow">
+      <span>★ DIAN ARDIANSAH // FULLSTACK WEB DEVELOPER ★ LARAVEL &amp; REACT SPECIALIST ★ REST API &amp; DATABASE ARCHITECTURE ★ OPEN FOR WORK ★ </span>
+      <span>★ DIAN ARDIANSAH // FULLSTACK WEB DEVELOPER ★ LARAVEL &amp; REACT SPECIALIST ★ REST API &amp; DATABASE ARCHITECTURE ★ OPEN FOR WORK ★ </span>
+    </div>
+  </div>
+
+  <!-- Neobrutalist Navigation -->
+  <header class="neo-navbar" id="navbar">
+    <div class="container nav-wrap">
+      <a href="#hero" class="nav-brand-box">
+        <span class="nav-issue-stamp">VOL.01</span>
+        <span class="nav-brand-text">DIAN <span class="text-red">ARDIANSAH</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-link-list">
+          <li><a href="#about" class="nav-link-item">CH.01 ABOUT</a></li>
+          <li><a href="#skills" class="nav-link-item">CH.02 SKILLS</a></li>
+          <li><a href="#projects" class="nav-link-item">CH.03 PROJECTS</a></li>
+          <li><a href="#experience" class="nav-link-item">CH.04 TIMELINE</a></li>
+          <li><a href="#contact" class="nav-cta-btn"><i data-lucide="send"></i> CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-burger-btn" id="menuToggle" aria-label="Toggle Menu">
+        <i data-lucide="menu" id="menuIcon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: NEOBRUTALIST HERO WITH DIAN'S REAL PHOTO -->
+    <section class="neo-hero-section" id="hero">
+      
+      <!-- Background Marquee Typography Layers -->
+      <div class="hero-marquee-layers" id="heroMarqueeWall" aria-hidden="true">
+        <div class="marquee-strip strip-left">
+          <div class="marquee-inner">
+            <span>DIAN ARDIANSAH — FULLSTACK WEB DEVELOPER — LARAVEL — REACT — PHP — MYSQL — DIAN ARDIANSAH — FULLSTACK DEVELOPER — </span>
+            <span>DIAN ARDIANSAH — FULLSTACK WEB DEVELOPER — LARAVEL — REACT — PHP — MYSQL — DIAN ARDIANSAH — FULLSTACK DEVELOPER — </span>
+          </div>
+        </div>
+
+        <div class="marquee-strip strip-right strip-outline">
+          <div class="marquee-inner">
+            <span>WEB SYSTEMS ARCHITECT — DIAN ARDIANSAH — BACKEND LOGIC — WEB SYSTEMS ARCHITECT — DIAN ARDIANSAH — </span>
+            <span>WEB SYSTEMS ARCHITECT — DIAN ARDIANSAH — BACKEND LOGIC — WEB SYSTEMS ARCHITECT — DIAN ARDIANSAH — </span>
+          </div>
+        </div>
+
+        <div class="marquee-strip strip-left strip-red">
+          <div class="marquee-inner">
+            <span>LARAVEL SPECIALIST — REST APIS — WEB ARCHITECTURE — LARAVEL SPECIALIST — REST APIS — </span>
+            <span>LARAVEL SPECIALIST — REST APIS — WEB ARCHITECTURE — LARAVEL SPECIALIST — REST APIS — </span>
+          </div>
+        </div>
+
+        <div class="marquee-strip strip-right strip-outline">
+          <div class="marquee-inner">
+            <span>DIAN ARDIANSAH — HIGH PERFORMANCE WEB — FULLSTACK DEVELOPER — DIAN ARDIANSAH — HIGH PERFORMANCE WEB — </span>
+            <span>DIAN ARDIANSAH — HIGH PERFORMANCE WEB — FULLSTACK DEVELOPER — DIAN ARDIANSAH — HIGH PERFORMANCE WEB — </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Stage Center -->
+      <div class="container hero-container-wrap">
+        <div class="hero-stage-grid">
+          
+          <!-- Left/Main Hero Info -->
+          <div class="hero-text-col" id="heroBadgeCluster">
+            <h1 class="hero-giant-name">
+              DIAN <span class="text-red">ARDIANSAH</span>
+            </h1>
+
+            <p class="hero-desc-box">
+              Building reliable web systems that solve real business problems and scale with your needs.
+            </p>
+
+            <div class="hero-btn-group">
+              <a href="#projects" class="neo-btn btn-neo-red">
+                <i data-lucide="layers"></i>
+                <span>EXPLORE PROJECTS</span>
+              </a>
+              <a href="https://wa.me/6285156527740" target="_blank" rel="noopener noreferrer" class="neo-btn btn-neo-yellow">
+                <i data-lucide="phone"></i>
+                <span>CHAT WHATSAPP</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Dian's Real Photo Frame -->
+          <div class="hero-photo-col" id="heroPhotoSlot">
+            <div class="neo-photo-frame" id="travelingPortrait">
+              <img src="assets/images/dian-photo.jpg" alt="Dian Ardiansah" class="hero-portrait-img">
+              <div class="photo-bottom-caption">
+                <strong>DIAN ARDIANSAH</strong>
+                <span>Fullstack Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CHAPTER 01: ABOUT ME -->
+    <section class="neo-chapter-section" id="about">
+      <div class="container">
+        
+        <div class="chapter-header-box gsap-reveal">
+          <div class="chapter-pill-tag">CHAPTER 01</div>
+          <h2 class="chapter-main-title">ABOUT ME</h2>
+          <div class="chapter-solid-bar"></div>
+        </div>
+
+        <div class="about-grid-layout">
+          
+          <!-- Column 1: Desktop Landing Slot beside About Panel -->
+          <div class="about-photo-col desktop-only-slot" id="aboutDesktopPhotoSlot">
+            <div class="about-desktop-placeholder"></div>
+          </div>
+
+          <!-- Column 2: About Main Panel -->
+          <div class="about-text-col">
+            <div class="neo-card-panel about-main-panel gsap-reveal">
+              
+              <div class="panel-tag-header">PANEL #01 // PROFILE &amp; FOCUS</div>
+              
+              <!-- Focus Quote Row with Mobile Photo Slot Beside Quote -->
+              <div class="about-focus-header">
+                <div class="about-mobile-photo-slot mobile-only-slot" id="aboutMobilePhotoSlot"></div>
+                <div class="neo-speech-box">
+                  <p class="speech-quote">
+                    "Fokus utama saya adalah merancang dan membangun sistem web andal yang memecahkan masalah nyata, mengotomasi alur kerja, dan memberikan solusi tepat guna bagi kebutuhan pengguna."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Web Engineering Profile Details -->
+              <div class="about-details-content">
+                <h3 class="panel-title-text"><i data-lucide="user-check"></i> Web Engineering Profile</h3>
+                <p class="panel-body-text">
+                  Halo, saya <strong>Dian Ardiansah</strong>. Saya adalah Fullstack Web Developer yang berfokus pada pengembangan aplikasi web menggunakan framework <strong>Laravel &amp; PHP</strong> di backend serta <strong>React &amp; Tailwind CSS</strong> di frontend.
+                </p>
+                <p class="panel-body-text">
+                  Memiliki pengalaman praktis dalam merancang database relasional (MySQL), alur validasi berkas, pembuatan REST API, modul rekapitulasi data dan pelaporan bisnis, serta integrasi sistem modern.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 02: SKILLS & TECH STACK (SKILL LEVEL BARS + INFINITE MARQUEE) -->
+    <section class="neo-chapter-section bg-comic-canvas" id="skills">
+      <div class="container">
+        
+        <div class="chapter-header-box gsap-reveal">
+          <div class="chapter-pill-tag">CHAPTER 02</div>
+          <h2 class="chapter-main-title">TECH STACK</h2>
+          <p class="chapter-subtitle">Tingkat kemahiran dan teknologi utama yang saya gunakan dalam pengembangan web.</p>
+          <div class="chapter-solid-bar"></div>
+        </div>
+
+        <!-- Top: Skill Proficiency Bars -->
+        <div class="neo-card-panel panel-dark-bg tech-skills-panel gsap-reveal">
+          <div class="panel-tag-header">SKILL PROFICIENCY &amp; TOOLS</div>
+          
+          <div class="tech-skills-grid">
+            
+            <!-- Skill 1 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">Laravel &amp; PHP</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="95">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-target="95"></div>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">MySQL Database</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="88">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-yellow" data-target="88"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">REST API</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="90">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-cyan" data-target="90"></div>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">React &amp; JavaScript</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="88">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-yellow" data-target="88"></div>
+              </div>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">Tailwind CSS &amp; CSS3</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="90">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-cyan" data-target="90"></div>
+              </div>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="skill-level-item">
+              <div class="skill-level-header">
+                <span class="skill-level-name">Git &amp; GitHub</span>
+                <span class="skill-level-badge">ADVANCED · <span class="skill-pct-counter" data-pct="94">0</span>%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill fill-green" data-target="94"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom: Infinite Marquee Logos -->
+        <div class="tech-marquee-wrapper gsap-reveal">
+          <div class="tech-marquee-lane lane-left" data-tech-row="1">
+            <!-- Populated dynamically by JS -->
+          </div>
+          <div class="tech-marquee-lane lane-right" data-tech-row="2">
+            <!-- Populated dynamically by JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 03: FEATURED PROJECTS (TOP SCREENSHOT CAROUSEL & POP-UP MODAL) -->
+    <section class="neo-chapter-section" id="projects">
+      <div class="container">
+        
+        <div class="chapter-header-box gsap-reveal">
+          <div class="chapter-pill-tag">CHAPTER 03</div>
+          <h2 class="chapter-main-title">FEATURED PROJECTS</h2>
+          <p class="chapter-subtitle">Geser carousel screenshot di setiap proyek atau klik tombol untuk melihat modul &amp; detail lengkap.</p>
+          <div class="chapter-solid-bar"></div>
+        </div>
+
+        <div class="neo-projects-stack" id="projectsContainer">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHAPTER 04: CAREER TIMELINE -->
+    <section class="neo-chapter-section bg-comic-canvas" id="experience">
+      <div class="container">
+        
+        <div class="chapter-header-box gsap-reveal">
+          <div class="chapter-pill-tag">CHAPTER 04</div>
+          <h2 class="chapter-main-title">CAREER TIMELINE</h2>
+          <div class="chapter-solid-bar"></div>
+        </div>
+
+        <div class="neo-timeline-stack">
+          
+          <!-- Experience 1: KKNM Pelaksanaan -->
+          <div class="timeline-row-card gsap-reveal">
+            <div class="timeline-tag-year">JAN 2026 — MEI 2026</div>
+            <div class="neo-card-panel timeline-box-body">
+              <h3 class="timeline-role-title">Fullstack Web Developer</h3>
+              <div class="timeline-company-name">Sistem Pelaksanaan KKNM</div>
+              <p class="timeline-body-text">
+                • Mengembangkan aplikasi sistem pelaksanaan KKNM (Logbook Individu, Logbook Kelompok, Laporan Akhir, Artikel Ilmiah, &amp; Penilaian DPL) yang terintegrasi penuh.<br>
+                • Membangun arsitektur backend yang aman dan terstruktur menggunakan framework Laravel &amp; MySQL.<br>
+                • Mengelola workflow validasi data aktivitas secara presisi dan pelaporan rekapitulasi nilai otomatis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 2: BKAD Tangsel -->
+          <div class="timeline-row-card gsap-reveal">
+            <div class="timeline-tag-year">MAR 2026 — APR 2026</div>
+            <div class="neo-card-panel timeline-box-body">
+              <h3 class="timeline-role-title">Software Engineer / Integration</h3>
+              <div class="timeline-company-name">BKAD Kota Tangerang Selatan</div>
+              <p class="timeline-body-text">
+                • Berkontribusi dalam pengembangan aplikasi monitoring aset berbasis lokasi (LBS) terintegrasi dengan backend REST API berbasis Laravel.<br>
+                • Mengimplementasikan integrasi pemetaan geolokasi dan modul pelaporan ekspor data ke Excel, CSV, dan PDF.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 3: Vinix7 Aurum -->
+          <div class="timeline-row-card gsap-reveal">
+            <div class="timeline-tag-year">AGU 2025 — DES 2025</div>
+            <div class="neo-card-panel timeline-box-body">
+              <h3 class="timeline-role-title">Data Science Intern</h3>
+              <div class="timeline-company-name">Vinix7 Aurum, Bandung</div>
+              <p class="timeline-body-text">
+                • Berperan aktif dalam proses pengumpulan, pembersihan (data cleaning), dan analisis data eksploratif (EDA).<br>
+                • Berkontribusi pada perancangan visualisasi data dan penyusunan laporan hasil analisis bersama tim.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 4: Web Developer Pendaftaran -->
+          <div class="timeline-row-card gsap-reveal">
+            <div class="timeline-tag-year">MAR 2025 — AGU 2025</div>
+            <div class="neo-card-panel timeline-box-body">
+              <h3 class="timeline-role-title">Web Developer</h3>
+              <div class="timeline-company-name">Sistem Pendaftaran KKNM</div>
+              <p class="timeline-body-text">
+                • Merancang aplikasi web sistem pendaftaran untuk digitalisasi dan efisiensi administrasi.<br>
+                • Mengembangkan antarmuka pengguna (UI) yang interaktif dan responsif menggunakan framework Laravel.<br>
+                • Melakukan tahap pengujian sistem guna menjamin kestabilan dan performa aplikasi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-row-card gsap-reveal">
+            <div class="timeline-tag-year">SEP 2022 — MEI 2026</div>
+            <div class="neo-card-panel timeline-box-body">
+              <h3 class="timeline-role-title">Sarjana Komputer (S.Kom) - Teknik Informatika</h3>
+              <div class="timeline-company-name">Universitas Langlangbuana</div>
+              <p class="timeline-body-text">
+                • Fokus Studi: Pengembangan Web (Web Development) dan Analisis Data (Data Analysis).<br>
+                • Terampil dalam merancang solusi digital berbasis web yang terstruktur dan tepat guna.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHAPTER 05: CONTACT ME -->
+    <section class="neo-chapter-section" id="contact">
+      <div class="container">
+        
+        <div class="chapter-header-box gsap-reveal">
+          <div class="chapter-pill-tag">CHAPTER 05</div>
+          <h2 class="chapter-main-title">GET IN TOUCH</h2>
+          <p class="chapter-subtitle">Punya tawaran proyek, peluang karir, atau ingin berdiskusi? Hubungi saya langsung!</p>
+          <div class="chapter-solid-bar"></div>
+        </div>
+
+        <div class="neo-grid-2col">
+          
+          <!-- Channels -->
+          <div class="neo-channels-stack">
+            
+            <a href="https://wa.me/6285156527740" target="_blank" rel="noopener noreferrer" class="neo-card-panel channel-neo-item gsap-reveal">
+              <div class="channel-neo-badge badge-green">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="channel-neo-info">
+                <span class="channel-neo-sub">DIRECT WHATSAPP</span>
+                <strong class="channel-neo-main">+62 851-5652-7740</strong>
+                <small class="channel-neo-cta">Klik untuk chat langsung via WhatsApp &rarr;</small>
+              </div>
+            </a>
+
+            <a href="mailto:dianardiansah511@gmail.com" class="neo-card-panel channel-neo-item gsap-reveal">
+              <div class="channel-neo-badge badge-red">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="channel-neo-info">
+                <span class="channel-neo-sub">ELECTRONIC MAIL</span>
+                <strong class="channel-neo-main">dianardiansah511@gmail.com</strong>
+                <small class="channel-neo-cta">Kirim pesan email langsung &rarr;</small>
+              </div>
+            </a>
+
+            <a href="https://github.com/Lightdraa511" target="_blank" rel="noopener noreferrer" class="neo-card-panel channel-neo-item gsap-reveal">
+              <div class="channel-neo-badge badge-white">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#000"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="channel-neo-info">
+                <span class="channel-neo-sub">GITHUB REPOSITORY</span>
+                <strong class="channel-neo-main">github.com/Lightdraa511</strong>
+                <small class="channel-neo-cta">Lihat repositori kode di GitHub &rarr;</small>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Form -->
+          <div class="neo-card-panel form-neo-box gsap-reveal">
+            <div class="panel-tag-header">QUICK DISPATCH</div>
+            <h3 class="form-neo-title">Kirim Pesan ke WhatsApp</h3>
+
+            <form id="contactForm">
+              <div class="neo-field-group">
+                <label for="name" class="neo-field-label">NAMA KAMU / PERUSAHAAN</label>
+                <input type="text" id="name" name="name" class="neo-field-input" placeholder="Masukkan nama..." required>
+              </div>
+
+              <div class="neo-field-group">
+                <label for="email" class="neo-field-label">EMAIL ATAU NO. HP</label>
+                <input type="text" id="email" name="email" class="neo-field-input" placeholder="email@kamu.com atau 0812..." required>
+              </div>
+
+              <div class="neo-field-group">
+                <label for="message" class="neo-field-label">PESAN / DETAIL PROYEK</label>
+                <textarea id="message" name="message" class="neo-field-textarea" rows="4" placeholder="Ceritakan kebutuhan sistem web atau tawaran kolaborasi..." required></textarea>
+              </div>
+
+              <button type="submit" class="neo-btn btn-neo-red btn-block-width">
+                <i data-lucide="send"></i>
+                <span>TRANSMIT VIA WHATSAPP</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- INTERACTIVE PROJECT DETAIL MODAL WITH TABS & SCREENSHOT GALLERY -->
+  <div class="neo-modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="neo-modal-window" id="modalWindow">
+      
+      <!-- Modal Top Header -->
+      <div class="modal-top-bar">
+        <div class="modal-badge-group">
+          <span class="modal-issue-tag">PROJECT DOSSIER</span>
+          <span class="modal-category-tag" id="modalCategory">ACADEMIC WEB SYSTEM</span>
+        </div>
+        <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close Modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="modal-scroll-body">
+        
+        <!-- Project Title -->
+        <h2 class="modal-project-title" id="modalTitle">Sistem Pelaksanaan KKNM, Logbook & Penilaian DPL</h2>
+
+        <!-- Tech Badges -->
+        <div class="modal-tech-cloud" id="modalTechStack">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Interactive Tab Navigation -->
+        <div class="modal-tabs-nav">
+          <button class="modal-tab-btn active" data-tab="overview" onclick="switchModalTab('overview')">
+            <i data-lucide="info"></i>
+            <span>DESKRIPSI</span>
+          </button>
+          <button class="modal-tab-btn" data-tab="features" onclick="switchModalTab('features')">
+            <i data-lucide="check-circle-2"></i>
+            <span>FITUR</span>
+          </button>
+          <button class="modal-tab-btn" data-tab="gallery" onclick="switchModalTab('gallery')">
+            <i data-lucide="image"></i>
+            <span>SCREENSHOT</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Detailed Overview -->
+        <div class="modal-tab-pane active" id="tabOverview">
+          <div class="modal-section-box">
+            <h4 class="modal-section-heading"><i data-lucide="info"></i> Deskripsi &amp; Arsitektur Proyek</h4>
+            <p class="modal-long-desc" id="modalDescription">
+              <!-- Populated by JS -->
+            </p>
+          </div>
+        </div>
+
+        <!-- Tab 2: Key Features Checklist -->
+        <div class="modal-tab-pane" id="tabFeatures">
+          <div class="modal-section-box">
+            <h4 class="modal-section-heading"><i data-lucide="check-circle-2"></i> Fitur Utama</h4>
+            <div class="modal-features-list" id="modalFeatures">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Screenshot Gallery (SS-SS Project) -->
+        <div class="modal-tab-pane" id="tabGallery">
+          <div class="modal-section-box">
+            <h4 class="modal-section-heading"><i data-lucide="image"></i> Screenshot Preview</h4>
+            <div class="modal-gallery-grid" id="modalGallery">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-bottom-bar" style="justify-content: flex-end;">
+        <button class="neo-btn btn-neo-red" onclick="closeProjectModal()">
+          <span>TUTUP PREVIEW</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 11. FULLSCREEN IMAGE PREVIEW MODAL -->
+  <div class="neo-lightbox-backdrop" id="imageLightbox" onclick="closeImageLightbox(event)">
+    <div class="neo-lightbox-window" id="lightboxWindow" onclick="event.stopPropagation()">
+      <div class="lightbox-top-bar">
+        <div class="lightbox-title-box">
+          <span class="lightbox-badge">PREVIEW</span>
+          <strong class="lightbox-title" id="lightboxTitle">Screenshot Preview</strong>
+        </div>
+        <button class="lightbox-close-btn" onclick="closeImageLightbox()" aria-label="Tutup Preview">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="lightbox-img-wrapper" id="lightboxImgWrapper">
+        <img id="lightboxImg" src="" alt="Screenshot" class="lightbox-img" />
+      </div>
+      <div class="lightbox-bottom-bar">
+        <span class="lightbox-hint">Tekan ESC atau tombol tutup untuk kembali</span>
+        <button class="neo-btn btn-neo-yellow" style="padding: 0.45rem 1.1rem; font-size: 0.8rem;" onclick="closeImageLightbox()">TUTUP PREVIEW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEOBRUTALIST FOOTER -->
+  <footer class="neo-footer">
+    <div class="container footer-neo-wrap">
+      <div class="footer-left-side">
+        <div class="footer-vol-brand">
+          <span class="nav-issue-stamp">VOL.01</span>
+          <strong>DIAN <span class="text-red">ARDIANSAH</span></strong>
+        </div>
+        <p class="footer-lead-text">Fullstack Web Developer</p>
+      </div>
+
+      <div class="footer-social-icons">
+        <a href="https://github.com/Lightdraa511" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        <a href="mailto:dianardiansah511@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="https://wa.me/6285156527740" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-copy-bar">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> Dian Ardiansah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP Main Script -->
+  <script src="assets/js/main.js"></script>
+  <!-- Cursed Energy Interactive Engine -->
+  <script src="assets/js/cursed-energy.js"></script>
+  <script>
+    lucide.createIcons();
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
