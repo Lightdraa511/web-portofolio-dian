@@ -2095,6 +2095,92 @@ img {
   .form-neo-title {
     font-size: 1.2rem;
   }
+
+  /* Interactive Modal Mobile (768px) */
+  .neo-modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .neo-modal-window {
+    max-height: 94vh;
+    box-shadow: 6px 6px 0px var(--neo-red), 6px 6px 0px 2px #000;
+  }
+
+  .modal-top-bar {
+    padding: 0.75rem 1rem;
+  }
+
+  .modal-project-title {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  .modal-scroll-body {
+    padding: 1.25rem 1rem;
+    gap: 1.15rem;
+  }
+
+  .modal-tech-badge {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .modal-tabs-nav {
+    gap: 0.4rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .modal-tab-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .modal-section-box {
+    padding: 1rem;
+  }
+
+  .modal-section-heading {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-long-desc {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .modal-features-list {
+    gap: 0.6rem;
+  }
+
+  .modal-feature-item {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .modal-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gallery-screen-mock.has-real-image {
+    height: 190px;
+  }
+
+  .gallery-label {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .modal-bottom-bar {
+    padding: 0.75rem 1rem;
+  }
+
+  .modal-bottom-bar .neo-btn {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    font-size: 0.82rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2258,5 +2344,151 @@ img {
   .neo-btn.btn-block-width {
     font-size: 0.78rem;
     padding: 0.7rem 0.9rem;
+  }
+
+  /* Interactive Modal Small Mobile (480px) */
+  .neo-modal-backdrop {
+    padding: 0.4rem;
+  }
+
+  .neo-modal-window {
+    max-height: 96vh;
+    border-width: 3px;
+    box-shadow: 4px 4px 0px var(--neo-red), 4px 4px 0px 2px #000;
+  }
+
+  .modal-top-bar {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .modal-badge-group {
+    gap: 0.4rem;
+  }
+
+  .modal-issue-tag,
+  .modal-category-tag {
+    font-size: 0.62rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .modal-close-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-project-title {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+
+  .modal-scroll-body {
+    padding: 0.9rem 0.75rem;
+    gap: 0.9rem;
+  }
+
+  .modal-tech-cloud {
+    gap: 0.35rem;
+  }
+
+  .modal-tech-badge {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .modal-tabs-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.35rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .modal-tab-btn {
+    font-size: 0.68rem;
+    padding: 0.45rem 0.25rem;
+    justify-content: center;
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .modal-tab-btn i {
+    width: 12px;
+    height: 12px;
+  }
+
+  .modal-section-box {
+    padding: 0.85rem;
+  }
+
+  .modal-section-heading {
+    font-size: 0.92rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .modal-long-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .modal-features-list {
+    gap: 0.5rem;
+  }
+
+  .modal-feature-item {
+    font-size: 0.8rem;
+    gap: 0.45rem;
+  }
+
+  .gallery-screen-mock.has-real-image {
+    height: 160px;
+  }
+
+  .gallery-label {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.7rem;
+  }
+
+  .modal-bottom-bar {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .modal-bottom-bar .neo-btn {
+    font-size: 0.78rem;
+    padding: 0.6rem 0.85rem;
+  }
+
+  /* Fullscreen Lightbox Small Mobile */
+  .neo-lightbox-backdrop {
+    padding: 0.4rem;
+  }
+
+  .neo-lightbox-window {
+    border-width: 3px;
+    box-shadow: 6px 6px 0px var(--neo-yellow), 6px 6px 0px 2px #000;
+  }
+
+  .lightbox-top-bar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .lightbox-title {
+    font-size: 0.8rem;
+  }
+
+  .lightbox-close-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .lightbox-img-wrapper {
+    padding: 0.5rem;
+  }
+
+  .lightbox-bottom-bar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .lightbox-hint {
+    font-size: 0.7rem;
   }
 }
