@@ -97,15 +97,15 @@ function renderTechMarquee() {
 
   const LOGOS_ROW_1 = [
     { name: 'Laravel', role: 'Backend Framework', icon: brand('laravel', 'ff2d20') },
-    { name: 'React', role: 'Frontend Library', icon: brand('react', '61dafb') },
     { name: 'PHP 8.x', role: 'Backend Core', icon: brand('php', '777bb4') },
     { name: 'MySQL', role: 'Relational Database', icon: brand('mysql', '00758f') },
     { name: 'REST API', role: 'API Architecture', icon: brand('json', 'ffffff') },
+    { name: 'JavaScript', role: 'ES6+ Language', icon: brand('javascript', 'f7df1e') },
     { name: 'Tailwind CSS', role: 'Utility-First CSS', icon: brand('tailwindcss', '38bdf8') }
   ];
 
   const LOGOS_ROW_2 = [
-    { name: 'JavaScript', role: 'ES6+ Language', icon: brand('javascript', 'f7df1e') },
+    { name: 'React', role: 'Frontend UI', icon: brand('react', '61dafb') },
     { name: 'HTML5', role: 'Semantic Markup', icon: brand('html5', 'e34f26') },
     { name: 'CSS3', role: 'Modern Styling', icon: brand('css', '1572b6') },
     { name: 'Git', role: 'Version Control', icon: brand('git', 'f05032') },
